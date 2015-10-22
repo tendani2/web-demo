@@ -126,7 +126,7 @@ header .navbar-collapse  ul.navbar-nav {
 }
 
 header .navbar-default{
-    background-color: #fff;
+    background-color: darkblue;
 }
 
 header .nav li a:hover,
@@ -246,7 +246,7 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #111;
+  color: honeydew;
   text-shadow: none;
 }
 
@@ -308,7 +308,7 @@ ul.nav li.dropdown a {
 
 #featured{
 	width: 100%;
-	background:#fcfcfc;
+	background:whitesmoke;
 	position:relative;
 	margin:0;
 	padding:0;
