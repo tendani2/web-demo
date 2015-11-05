@@ -18,9 +18,8 @@
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
-	font-weight:300;
 	line-height:1.6em;
-	color:#656565;
+	color:#252839;
 }
 
 a:active {
@@ -126,7 +125,7 @@ header .navbar-collapse  ul.navbar-nav {
 }
 
 header .navbar-default{
-    background-color: darkblue;
+    background-color: #252839;
 }
 
 header .nav li a:hover,
