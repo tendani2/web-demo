@@ -14,9 +14,11 @@
 <link href="css/style.css" rel="stylesheet" />
 <link href="css/freelancer.css" rel="stylesheet" />
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-
-<!-- Theme skin -->
-<link href="skins/default.css" rel="stylesheet" />
+<link rel="stylesheet"
+  href="css/footer-distributed-with-address-and-phones.css">
+<link rel="stylesheet" href="css/header-basic-light.css">
+<link href='http://fonts.googleapis.com/css?family=Cookie'
+  rel='stylesheet' type='text/css'>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -26,53 +28,36 @@
 </head>
 <body>
   <div id="wrapper">
-
     <!-- start header -->
-    <header>
-      <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle"
-              data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span> <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"> <img src="img/logo.jpg" alt="">
-            </a>
-<!--             <div class="row">
-              <div class="col-lg-3">
-                <a class="navbar-brand" href="index.html">Liremi&nbsp;&nbsp;<span>Career&nbsp;&nbsp;Foundation</span></a>
-              </div>
-            </div> -->
-          </div>
-          <div class="navbar-collapse collapse ">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="portfolio.html">Team</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+    <header class="header-basic-light">
+      <div class="header-limiter">
+        <h1>
+          <a href="#">Liremi<span>CareerFoundation</span></a>
+        </h1>
+        <nav>
+          <a href="index.html">Home</a> <a href="team.html"
+            class="selected">Team</a> <a href="about.html">About</a> <a
+            href="contact.html">Contact</a>
+        </nav>
       </div>
     </header>
-    <div class="row center">
-      <div class="col-lg-12">
-        <h2 class="page-header text-center">Our Team</h2>
-      </div>
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">
+        <span>Our Team</span>
+      </h2>
     </div>
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
-      <div class="container">
+      <div class="container col-md-12">
         <div class="row">
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb portfolio-item">
+          <div class="col-md-3 thumb portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link"
               data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div> <img src="img/works/1.jpg" class="img-thumbnail"
+              </div> <img src="img/works/1.jpg" class="img-rounded"
               alt="National Chairperson" height="100%" width="100%">
             </a>
             <p class="text-center">
@@ -81,14 +66,14 @@
             </h4>
             </p>
           </div>
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb portfolio-item">
+          <div class="col-md-3 thumb portfolio-item">
             <a href="#portfolioModal2" class="portfolio-link"
               data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div> <img src="img/works/2.jpg" class="img-thumbnail"
+              </div> <img src="img/works/2.jpg" class="img-rounded"
               alt="fsfsd" height="100%" width="100%">
             </a>
             <p class="text-center">
@@ -96,16 +81,14 @@
                 Director</em>
             </p>
           </div>
-
-
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb portfolio-item">
+          <div class="col-md-3 thumb portfolio-item">
             <a href="#portfolioModal3" class="portfolio-link"
               data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div> <img src="img/works/3.jpg" class="img-thumbnail" alt=""
+              </div> <img src="img/works/3.jpg" class="img-rounded" alt=""
               height="100%" width="100%">
             </a>
             <p class="text-center">
@@ -113,14 +96,14 @@
                 manager</em>
             </p>
           </div>
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb portfolio-item">
+          <div class="col-md-3 thumb portfolio-item">
             <a href="#portfolioModal4" class="portfolio-link"
               data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div> <img src="img/works/4.jpg" class="img-thumbnail" alt=""
+              </div> <img src="img/works/4.jpg" class="img-rounded" alt=""
               height="100%" width="100%">
             </a>
             <p class="text-center">
@@ -128,23 +111,35 @@
                 Officer</em>
             </p>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb portfolio-item">
+          <div class="col-md-3 thumb portfolio-item">
             <a href="#portfolioModal5" class="portfolio-link"
               data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div> <img src="img/works/5.jpg" class="img-thumbnail"
+              </div> <img src="img/works/5.jpg" class="img-rounded"
               alt="fsfsd" height="100%" width="100%">
             </a>
             <p class="text-center">
-              <strong>Tshifhiwa Delicia Mudau</strong><br> <em>Marketing
+              <strong>Ramasela Carol Ledwaba</strong><br> <em>Marketing
                 Mananger</em>
             </p>
           </div>
-
+          <div class="col-md-3 thumb portfolio-item">
+            <a href="#portfolioModal6" class="portfolio-link"
+              data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div> <img src="img/works/6.jpg" class="img-rounded"
+              alt="fsfsd" height="100%" width="100%">
+            </a>
+            <p class="text-center">
+              <strong>Tshifhiwa Delicia Mudau</strong><br> <em>Deputy Director</em>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -161,7 +156,7 @@
                     Nembudani</h3>
                 </div>
                 <div class="modal-body">
-                  <img class="img-responsive img-centered"
+                  <img class="img-responsive center-block"
                     src="img/works/1.jpg" alt=""> <span
                     class="label text-center">Biography</span> <br>
                   <p class="text-center">TODO</p>
@@ -177,7 +172,7 @@
   </div>
   <!-- /.modal -->
 
-  <div class="modal fade" id="portfolioModal2">
+  <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -186,15 +181,13 @@
           <h3 class="text-center" id="myModalLabel">Elijah Liremi</h3>
         </div>
         <div class="modal-body">
-          <img class="img-responsive img-centered" src="img/works/2.jpg"
+          <img class="img-responsive center-block" src="img/works/2.jpg"
             alt=""> <span class="label text-center">Biography</span>
           <br>
-          <p class="text-center">
-          <p>
+          <p class="text-justify">
             My name is <strong>Elijah liremi</strong>, I was born in <em>Makhitha</em>
             village on the 5 November 1989 about 30 km western side of <em>Louis
               trichardt</em>.
-          <p>
             I am the Last born and only a boy of mother
             <mark>Makwarela Matia</mark>
             and father
@@ -267,7 +260,6 @@
             for economic emancipation. We are indid highlighting south
             African possibilities.
           </p>
-          </p>
 
         </div>
       </div>
@@ -283,14 +275,14 @@
             Telekisa</h3>
         </div>
         <div class="modal-body">
-          <img class="img-responsive img-centered" src="img/works/3.jpg"
+          <img class="img-responsive center-block" src="img/works/3.jpg"
             alt=""> <span class="label text-center">Biography</span>
           <br>
-          <p>
+          <p class="text-justify">
             <strong>Takalani</strong> was born and grew up in
             <mark>Limpopo</mark>
             formerly known as <em>Republic of Venda</em>.
-          <p>
+          <p class="text-justify">
             He Started formal schooling at
             <mark>Mmbabada Primary School</mark>
             in 1990. He also attended
@@ -300,13 +292,13 @@
             . Higher education certificates received include: <strong>BSc,
               BSc Hons</strong> - Univen and GDE (Mining) - Wits.
           </p>
-          <p>
+          <p class="text-justify">
             <strong>Takalani</strong> has worked as a <em>researcher,
               educator</em> and <em>environmentalist</em> for the past 10
             years. He is also involved in the labour movement for the
             past 7 years.
           </p>
-          <p>
+          <p class="text-justify">
             He was a shop
             <mark>
               Steward for <strong>NUMSA</strong>
@@ -333,11 +325,11 @@
           <h3 class="text-center" id="myModalLabel">Thabelo Mudau</h3>
         </div>
         <div class="modal-body">
-          <img class="img-responsive img-centered" src="img/works/4.jpg"
+          <img class="img-responsive center-block" src="img/works/4.jpg"
             alt=""> <span class="label text-center">Biography</span>
           <br>
-          <p class="text-center">
-          <p>Mudau Thabelo Rodney was born in 1989 at Ha-Mashau
+          <p class="text-justify">
+          <p class="text-justify">Mudau Thabelo Rodney was born in 1989 at Ha-Mashau
             Village. He is the last born of Mr and Mrs Mudau. He has
             interest in sports, live events, business adventures and
             youth development and empowerment. Thabelo is highly
@@ -367,11 +359,49 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"
             aria-hidden="true">×</button>
+          <h3 class="text-center" id="myModalLabel">Ramasela Carol Ledwaba</h3>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive center-block" src="img/works/5.jpg"
+            alt=""> <span class="label center-block">Biography</span>
+          <br>
+          <p class="text-justify">
+          <p class="text-justify">Ramasela Carol Ledwaba was born in 1990 at Mosesetjane
+            Village, Limpopo. Carol has dreams and ambitions of adding
+            significant value to the HR industry, she sees herself being
+            integral parts in people’s lives by helping them further
+            their education and also assist them getting and making a
+            career out of their dreams. After matriculating, carol
+            enrolled with the University of Johannesburg in order to
+            feed the love she has for human resource management by
+            studying towards a Diploma in human resource management. She
+            believes in education being the ultimate key success, with
+            that she is determined to further her studies by studying
+            towards a BTech degree and then later a Bcom honours in
+            human resource management. During her varsity years, she was
+            elected to be resident academic advisor for the resident
+            called Hector Peterson in the year 2012 at the University of
+            Johannesburg. Her duties involved assisting first year’s
+            students with adapting to the university diversity and with
+            academics. Carol is currently participating on an 18months
+            internship at EOH recruitment solutions where she will
+            potentially grow to become a recruitment consultant.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="portfolioModal6">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"
+            aria-hidden="true">×</button>
           <h3 class="text-center" id="myModalLabel">Tshifhiwa
             Delicia Mudau</h3>
         </div>
         <div class="modal-body">
-          <img class="img-responsive img-centered" src="img/works/5.jpg"
+          <img class="img-responsive center-block" src="img/works/6.jpg"
             alt=""> <span class="label text-center">Biography</span>
           <br>
           <p class="text-center">
@@ -400,41 +430,49 @@
     </div>
   </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3">
-          <div class="widget"></div>
-        </div>
-        <div class="col-lg-3">
-          <div class="widget"></div>
-        </div>
+  <!-- The content of your page would go here. -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <p class="footer-links">
+        <a href="index.html">Home</a> · <a href="team.html">Team</a> · <a
+          href="about.html">About</a> · <a href="contact.html">Contact</a>
+      </p>
+      <p class="footer-company-name">Liremi Career Foundation &copy;
+        2015</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>
+          <span>21 Louis Street</span> Limpopo, South Africa
+        </p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>(015) 9623577</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p>
+          <a href="mailto:support@company.com">LiremiCareerFoundation@web.com</a>
+        </p>
       </div>
     </div>
-    <div id="sub-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6"></div>
-        </div>
-        <div class="col-lg-6">
-          <ul class="social-network">
-            <li><a href="#" data-placement="top" title="Facebook"><i
-                class="fa fa-facebook"></i></a></li>
-            <li><a href="#" data-placement="top" title="Twitter"><i
-                class="fa fa-twitter"></i></a></li>
-            <li><a href="#" data-placement="top" title="Linkedin"><i
-                class="fa fa-linkedin"></i></a></li>
-            <li><a href="#" data-placement="top" title="Pinterest"><i
-                class="fa fa-pinterest"></i></a></li>
-            <li><a href="#" data-placement="top"
-              title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-          </ul>
-        </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span> <strong>Liremi Career
+          Foundation</strong><br> is a Non-profit organization and believes
+        in connecting young people with opportunities through career
+        guidance and career exhibitions.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+          class="fa fa-twitter"></i></a> <a href="#"><i
+          class="fa fa-linkedin"></i></a> <a href="#"><i
+          class="fa fa-github"></i></a>
       </div>
     </div>
   </footer>
-  </div>
   <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
   <!-- javascript
     ================================================== -->
@@ -452,6 +490,4 @@
   <script src="js/animate.js"></script>
   <script src="js/custom.js"></script>
 </body>
-
 </html>
-
