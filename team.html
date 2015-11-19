@@ -11,14 +11,159 @@
 <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
 <link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
-<link href="css/style.css" rel="stylesheet" />
 <link href="css/freelancer.css" rel="stylesheet" />
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet"
-  href="css/footer-distributed-with-address-and-phones.css">
+	href="css/footer-distributed-with-address-and-phones.css">
 <link rel="stylesheet" href="css/header-basic-light.css">
 <link href='http://fonts.googleapis.com/css?family=Cookie'
-  rel='stylesheet' type='text/css'>
+	rel='stylesheet' type='text/css'>
+<link href="css/agency.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.page-title {
+	color: slategrey;
+}
+
+.member-content .social-content li a {
+	display: inline-block;
+	padding: 0;
+	min-width: 40px;
+	height: 40px;
+	font-size: 21px;
+	line-height: 40px;
+	color: #5cc9df;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 transparent;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.member-content .details {
+	margin: 20px 0 0 20px;
+	position: relative;
+	padding: 30px;
+	padding-left: 100px;
+	background: #f5f5f5;
+	border-radius: 10px;
+	box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.08);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.member-content {
+	margin-bottom: 30px;
+}
+
+.member-thumb {
+	text-align: center;
+}
+
+.member-thumb h4 {
+	font-size: 21px;
+	margin: 10px 0;
+}
+
+.member-thumb .title {
+	font-size: 18px;
+	margin: 10px 0;
+	color: #5CC9DF;
+}
+
+.member-content:hover .details {
+	background: #5bc0de;
+	color: #fff;
+}
+
+.member-content.right .details {
+	margin: 20px 20px 0 0;
+	box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.08);
+}
+
+.member-content .details:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: -18px;
+	top: 30px;
+	width: 0px;
+	height: 0px;
+	background: transparent;
+	border: 20px solid transparent;
+	border-left: 20px solid #f5f5f5;
+	box-shadow: -3px 0 0 rgba(0, 0, 0, 0.08);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transition: border-left-color .3s ease-out;
+	transition: border-left-color .3s ease-out;
+}
+
+.member-content.right .details:after {
+	position: absolute;
+	left: auto;
+	right: -17px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid #f5f5f5;
+	box-shadow: 3px 0 0 0 rgba(0, 0, 0, 0.08);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transition: border-right-color .3s ease-out;
+	transition: border-right-color .3s ease-out;
+}
+
+.member-content:hover .details:after {
+	border-left-color: #5CC9DF;
+}
+
+.member-content.right:hover .details:after {
+	border-left-color: transparent;
+	border-right-color: #5CC9DF;
+}
+
+.member-content .details:before {
+	display: block;
+	content: "\201D";
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	font-size: 120px;
+	font-weight: 800;
+	line-height: 60px;
+	font-family: Arial;
+	color: #5cc9df;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.member-content:hover .details:before {
+	color: #fff;
+}
+
+.member-content .social-content {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.member-content .social-content li {
+	display: inline;
+	text-align: center;
+	margin: 0 2px;
+}
+
+.member-content:hover .social-content li a {
+	color: #fff;
+}
+
+.member-content .social-content li a:hover {
+	background: #fff;
+	color: #5cc9df;
+	box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05);
+}
+</style>
+
+
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -27,465 +172,326 @@
 
 </head>
 <body>
-  <div id="wrapper">
-    <!-- start header -->
-    <header class="header-basic-light">
-      <div class="header-limiter">
-        <h1>
-          <a href="index.html">Liremi <span>Career Foundation</span></a>
-        </h1>
-        <nav>
-          <a href="index.html">Home</a> <a href="team.html"
-            class="selected">Team</a> <a href="about.html">About</a> <a
-            href="contact.html">Contact</a>
-        </nav>
-      </div>
-    </header>
-    <div class="col-lg-12 text-center">
-      <h2 class="section-heading">
-        <span>Our Team</span>
-      </h2>
-    </div>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-      <div class="container col-md-12">
-        <div class="row">
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/1.jpg" class="img-rounded"
-              alt="National Chairperson" height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Mpho Nembudani</strong><br> <em>Operational Manager</em>
-            </p>
-          </div>
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal2" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/2.jpg" class="img-rounded"
-              alt="fsfsd" height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Elijah Liremi</strong><br> <em>Managing
-                Director</em>
-            </p>
-          </div>
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal3" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/3.jpg" class="img-rounded" alt=""
-              height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Takalani Telekisa</strong><br> <em>Communication
-                manager</em>
-            </p>
-          </div>
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal4" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/4.jpg" class="img-rounded" alt=""
-              height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Thabelo Mudau</strong><br> <em>Finance
-                Officer</em>
-            </p>
-          </div>
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal5" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/5.jpg" class="img-rounded"
-              alt="fsfsd" height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Ramasela Carol Ledwaba</strong><br> <em>Marketing
-                Mananger</em>
-            </p>
-          </div>
-          <div class="col-md-3 thumb portfolio-item">
-            <a href="#portfolioModal6" class="portfolio-link"
-              data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div> <img src="img/works/6.jpg" class="img-rounded"
-              alt="fsfsd" height="100%" width="100%">
-            </a>
-            <p class="text-center">
-              <strong>Tshifhiwa Delicia Mudau</strong><br> <em>Deputy Director</em>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <div class="container">
-          <div class="modal fade" id="portfolioModal1">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close"
-                    data-dismiss="modal" aria-hidden="true">×</button>
-                  <h3 class="text-center" id="myModalLabel">Mpho
-                    Nembudani</h3>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive center-block"
-                    src="img/works/1.jpg" alt=""> <span
-                    class="label text-center">Biography</span> <br>
-                  <p class="text-center">TODO</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
-  <!-- /.modal -->
+	<div id="wrapper">
+		<!-- start header -->
+		<header class="header-basic-light">
+			<div class="header-limiter">
+				<h1>
+					<a href="index.html">Liremi <span>Career Foundation</span></a>
+				</h1>
+				<nav>
+					<a href="index.html">Home</a> <a href="team.html" class="selected">Team</a>
+					<a href="about.html">About</a> <a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+		<div class="container bootstrap snippet">
+			<section id="team" class="white-bg padding-top-bottom">
+				<div class="container bootstrap snippet">
+					<h1 class="section-title text-center page-title section-heading">
+						<span>Meet our team</span>
+					</h1>
+					<p class="section-description text-center">We are a small team
+						with great skills. See the faces behind the lines of code.</p>
 
-  <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"
-            aria-hidden="true">×</button>
-          <h3 class="text-center" id="myModalLabel">Elijah Liremi</h3>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block" src="img/works/2.jpg"
-            alt=""> <span class="label text-center">Biography</span>
-          <br>
-          <p class="text-justify">
-            My name is <strong>Elijah liremi</strong>, I was born in <em>Makhitha</em>
-            village on the 5 November 1989 about 30 km western side of <em>Louis
-              trichardt</em>.
-            I am the Last born and only a boy of mother
-            <mark>Makwarela Matia</mark>
-            and father
-            <mark>Mafhungo William liremi</mark>
-            , my father from the royal house belonging to the clan of
-            king mapungubwe known as Tshivhula of vhatwanamba nation
-            commonly known as vhadau. Born in the midst of poverty and
-            underdevelopment I did well at primary school (madaheni
-            combined school) and secondary school a(madaheni combined
-            school) and then graduated to university level. Of cause a
-            lot of expectations from my mother who raised us 06 children
-            under difficult conditions since her husband died in 1998
-            when I was doing grade 3 but through the mentorship of my
-            former teacher Mrs mudau known as (alody)I manage to survive
-            and let it go. My life has been of struggle and victory, a
-            bigger challenge to face when one had to study and think of
-            poverty which doesn't only affect you alone , but with the
-            inspiration of my brother takalani Telekisa who manange to
-            exell Without th Availabity of his mother I manange to
-            understand that this too shall pass I remember when my
-            sisters force me to study social worker cause of the poverty
-            we had faced at home I manange to settle for political
-            science cause of the ispriration of Dr phandelani mathoma
-            who was by dat time an ambassador of Mali in south Africa
-            embassy, At university I became part of the progressive
-            youth alliance which i had to fight against students
-            financial exclusion in high education. I grew up within the
-            ranks to become a 1prominent leader of sasco, ancyl,ycl and
-            anc and given my family , community background of poverty of
-            cause a staunch communist in fact I joined anc at the age of
-            15 before I become a member of the Anc under the influence
-            of the late Elias Rantete and by that time he was running to
-            be a ward councilor but due to betrayal he lost to johana
-            nemalengeni, With those young people of my generation
-            cedrick Mokoena, jack Lithole and comrade Jacob khoza who
-            became my friend after The formation of Liremi career
-            foundation, we became found of classics we could read karl
-            marx from the beginners, origin of money and family, thesis
-            on pheubac to lenin, stalin, trosky and rousa luxenberg.
-            Ours was to critique conditions we lived in at time our
-            background and analyse the envisaged noble future of society
-            we would love to see. Under the guidance of great young
-            adults revolutionaries cde vuyani Sokhaba who was 2014/2015
-            president of src at university of the western cape, Jackson
-            mirahe ,norman zwannda Kutama and late elias Rantete who was
-            direct mentor and blood brother we became part of broader
-            mass democratic movement. At university of the western cape
-            I became close friend with Nwaoko prof Mashao but rather
-            blood brother an academic of Univen rather now a nuclear
-            physics.Having been inspired by leaders in the anc such as
-            president mbeki, Joel peter mayibuye netshitendzhe, ngwako
-            ramatlodi and sello moloto who in my cosas was inspired to
-            meet them, I come from the generation which led us in our
-            early youth the generation of Jackson mirahe, Vuyo Yekani,
-            Tshifhiwa matakala,the late thembi mokgonyana and others. I
-            was a prominent member of Ycl in uwc,sasco in my university
-            days of cape Town and of cause district committee member of
-            the young communist league of south Africa Alpheuos malivha
-            district far north of limppopo. My personal friend I grew up
-            with in my home village phathutshedzo ndouvhada died at
-            university in his last year of jounalism in the university
-            of limpopo, losing a young man who was a close friend to my
-            heart was one thing bad, cause a day before his death he
-            said to me now that your political science student the
-            future of the youth belong to you especially makhitha
-            village if you further need help tell me, after his burial
-            in 2011 I establish liremi career foundation to help the
-            children of the poor and working class, Long live the
-            struggle of our people against hunger and underdevelopment
-            for economic emancipation. We are indid highlighting south
-            African possibilities.
-          </p>
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/1.jpg" alt="">
+							<h4>Mpho Nembudani</h4>
+							<p class="title">Operational Manager</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								<p>My name is Mpho Nembudani....</p>
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="portfolioModal3">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"
-            aria-hidden="true">×</button>
-          <h3 class="text-center" id="myModalLabel">Takalani
-            Telekisa</h3>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block" src="img/works/3.jpg"
-            alt=""> <span class="label text-center">Biography</span>
-          <br>
-          <p class="text-justify">
-            <strong>Takalani</strong> was born and grew up in
-            <mark>Limpopo</mark>
-            formerly known as <em>Republic of Venda</em>.
-          <p class="text-justify">
-            He Started formal schooling at
-            <mark>Mmbabada Primary School</mark>
-            in 1990. He also attended
-            <mark>Muduluni senior primary school</mark>
-            . Matriculated in 2001,
-            <mark>Kutama Sec School</mark>
-            . Higher education certificates received include: <strong>BSc,
-              BSc Hons</strong> - Univen and GDE (Mining) - Wits.
-          </p>
-          <p class="text-justify">
-            <strong>Takalani</strong> has worked as a <em>researcher,
-              educator</em> and <em>environmentalist</em> for the past 10
-            years. He is also involved in the labour movement for the
-            past 7 years.
-          </p>
-          <p class="text-justify">
-            He was a shop
-            <mark>
-              Steward for <strong>NUMSA</strong>
-            </mark>
-            ,
-            <mark>Tubatse local</mark>
-            since 2013. Dedicated to the uplifting of previously
-            disadvantaged individuals especially young people. Thus he
-            is involved as a Communications Director for Liremi Career
-            Foundation. He likes going to the gym and very passionate
-            about sport in general. Avid reader particularly of
-            biographies and autobiographies.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="portfolioModal4">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"
-            aria-hidden="true">×</button>
-          <h3 class="text-center" id="myModalLabel">Thabelo Mudau</h3>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block" src="img/works/4.jpg"
-            alt=""> <span class="label text-center">Biography</span>
-          <br>
-          <p class="text-justify">
-          <p class="text-justify">Mudau Thabelo Rodney was born in 1989 at Ha-Mashau
-            Village. He is the last born of Mr and Mrs Mudau. He has
-            interest in sports, live events, business adventures and
-            youth development and empowerment. Thabelo is highly
-            influenced by people who comes from humble begginings that
-            strives for sucess and community development at large.</p>
-          <p>
-            Thabelo attended primary and secondary schools at Ha-Mashau
-            village and matriculated in 2005. He attained his BSC (Diet)
-            Hons degree at Medunsa in 2009 and completed his masters
-            degree in the University of Limpopo, Medunsa campus in 2014.
-            He intended to further obtain more degrees in different
-            fields of study, with keen interest in business
-            administration. Thabelo has been working for the department
-            of Heath for the past 6 years and currently works in Louis
-            Trichardt memorial hospital as a Health professional, He is
-            the finance officer of <span>Liremi </span>Career
-            Foundation.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/2.jpg" alt="">
+							<h4>Elijah Liremi</h4>
+							<p class="title">Managing Director</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								My name is <strong>Elijah liremi</strong>, I was born in <em>Makhitha</em>
+								village on the 5 November 1989 about 30 km western side of <em>Louis
+									trichardt</em>. I am the Last born and only a boy of mother
+								<mark>Makwarela Matia</mark>
+								and father
+								<mark>Mafhungo William liremi</mark>
+								, my father from the royal house belonging to the clan of king
+								mapungubwe known as Tshivhula of vhatwanamba nation commonly
+								known as vhadau. Born in the midst of poverty and
+								underdevelopment I did well at primary school (madaheni combined
+								school) and secondary school a(madaheni combined school) and
+								then graduated to university level. Of cause a lot of
+								expectations from my mother who raised us 06 children under
+								difficult conditions since her husband died in 1998 when I was
+								doing grade 3 but through the mentorship of my former teacher
+								Mrs mudau known as (alody)I manage to survive and let it go. My
+								life has been of struggle and victory, a bigger challenge to
+								face when one had to study and think of poverty which doesn't
+								only affect you alone , but with the inspiration of my brother
+								takalani Telekisa who manange to exell Without th Availabity of
+								his mother I manange to understand that this too shall pass I
+								remember when my sisters force me to study social worker cause
+								of the poverty we had faced at home I manange to settle for
+								political science cause of the ispriration of Dr phandelani
+								mathoma who was by dat time an ambassador of Mali in south
+								Africa embassy, At university I became part of the progressive
+								youth alliance which i had to fight against students financial
+								exclusion in high education.
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-  <div class="modal fade" id="portfolioModal5">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"
-            aria-hidden="true">×</button>
-          <h3 class="text-center" id="myModalLabel">Ramasela Carol Ledwaba</h3>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block" src="img/works/5.jpg"
-            alt=""> <span class="label center-block">Biography</span>
-          <br>
-          <p class="text-justify">
-          <p class="text-justify">Ramasela Carol Ledwaba was born in 1990 at Mosesetjane
-            Village, Limpopo. Carol has dreams and ambitions of adding
-            significant value to the HR industry, she sees herself being
-            integral parts in people’s lives by helping them further
-            their education and also assist them getting and making a
-            career out of their dreams. After matriculating, carol
-            enrolled with the University of Johannesburg in order to
-            feed the love she has for human resource management by
-            studying towards a Diploma in human resource management. She
-            believes in education being the ultimate key success, with
-            that she is determined to further her studies by studying
-            towards a BTech degree and then later a Bcom honours in
-            human resource management. During her varsity years, she was
-            elected to be resident academic advisor for the resident
-            called Hector Peterson in the year 2012 at the University of
-            Johannesburg. Her duties involved assisting first year’s
-            students with adapting to the university diversity and with
-            academics. Carol is currently participating on an 18months
-            internship at EOH recruitment solutions where she will
-            potentially grow to become a recruitment consultant.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/3.jpg" alt="">
+							<h4>Takalani Telekisa</h4>
+							<p class="title">Communication Manager</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								<p class="text-justify">
+									My name is<strong> Takalani</strong> I was born and grew up in
+									<mark>Limpopo province</mark>
+									formerly known as <em>Republic of Venda</em>.
+								<p class="text-justify">
+									I Started formal schooling at
+									<mark>Mmbabada Primary School</mark>
+									in 1990. I also attended
+									<mark>Muduluni senior primary school</mark>
+									. Matriculated in 2001,
+									<mark>Kutama Sec School</mark>
+									. Higher education certificates received include: <strong>BSc,
+										BSc Hons</strong> - Univen and GDE (Mining) - Wits.
+								</p>
+								<p class="text-justify">
+									<strong>Takalani</strong> has worked as a <em>researcher,
+										educator</em> and <em>environmentalist</em> for the past 10 years.
+									He is also involved in the labour movement for the past 7
+									years.
+								</p>
+								<p class="text-justify">
+									He was a shop
+									<mark>
+										Steward for <strong>NUMSA</strong>
+									</mark>
+									,
+									<mark>Tubatse local</mark>
+									since 2013. Dedicated to the uplifting of previously
+									disadvantaged individuals especially young people. Thus he is
+									involved as a Communications Director for Liremi Career
+									Foundation. He likes going to the gym and very passionate about
+									sport in general. Avid reader particularly of biographies and
+									autobiographies.
+								</p>
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-  <div class="modal fade" id="portfolioModal6">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"
-            aria-hidden="true">×</button>
-          <h3 class="text-center" id="myModalLabel">Tshifhiwa
-            Delicia Mudau</h3>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block" src="img/works/6.jpg"
-            alt=""> <span class="label text-center">Biography</span>
-          <br>
-          <p class="text-center">
-          <p>Tshifhiwa Delicia Mudau was born in 1991 at Ha-Mashau
-            village in the Limpopo province.Delicia strives to work to
-            her greatest abilities in order to achieve her success and
-            pursue her dreams.Delicia is an aspiring young lady whose
-            dreams are to become an industrial psychologist, her dreams
-            have led her to enrol with the University of Johannesburg to
-            study towards a Bcom in Human Resource Management. She
-            further studied towards Honours in Strategic Management and
-            is determined to further her studies by studying towards
-            Honours in Industrial Psychology, this clearly shows that
-            she values education and sees it as the ultimate key to
-            success. Her passion for people and HR has lead Delicia into
-            a path where she found herself working for the department of
-            Social Development for a period of twelve months.Delicia has
-            also used the knowledge she has gained from her HR studies
-            to secure an Internship with one of the largest recruitment
-            agencies in South Africa, EOH Recruitment solutions where
-            she is currently serving as an Intern Recruitment agent. She
-            is assistant managing director of the Liremi Career
-            Foundation.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- The content of your page would go here. -->
-  <footer class="footer-distributed">
-    <div class="footer-left">
-      <p class="footer-links">
-        <a href="index.html">Home</a> · <a href="team.html">Team</a> · <a
-          href="about.html">About</a> · <a href="contact.html">Contact</a>
-      </p>
-      <p class="footer-company-name">Liremi Career Foundation &copy;
-        2015</p>
-    </div>
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p>
-          <span>21 Louis Street</span> Limpopo, South Africa
-        </p>
-      </div>
-      <div>
-        <i class="fa fa-phone"></i>
-        <p>(015) 9623577</p>
-      </div>
-      <div>
-        <i class="fa fa-envelope"></i>
-        <p>
-          <a href="mailto:support@company.com">LiremiCareerFoundation@web.com</a>
-        </p>
-      </div>
-    </div>
-    <div class="footer-right">
-      <p class="footer-company-about">
-        <span>About the company</span> <strong>Liremi Career
-          Foundation</strong><br> is a Non-profit organization and believes
-        in connecting young people with opportunities through career
-        guidance and career exhibitions.
-      </p>
-      <div class="footer-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
-          class="fa fa-twitter"></i></a> <a href="#"><i
-          class="fa fa-linkedin"></i></a> <a href="#"><i
-          class="fa fa-github"></i></a>
-      </div>
-    </div>
-  </footer>
-  <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-  <!-- javascript
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/4.jpg" alt="">
+							<h4>Thabelo Mudau</h4>
+							<p class="title">Finance Officer</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								<p class="text-justify">Mudau Thabelo Rodney was born in
+									1989 at Ha-Mashau Village. He is the last born of Mr and Mrs
+									Mudau. He has interest in sports, live events, business
+									adventures and youth development and empowerment. Thabelo is
+									highly influenced by people who comes from humble begginings
+									that strives for sucess and community development at large.</p>
+								<p>
+									Thabelo attended primary and secondary schools at Ha-Mashau
+									village and matriculated in 2005. He attained his BSC (Diet)
+									Hons degree at Medunsa in 2009 and completed his masters degree
+									in the University of Limpopo, Medunsa campus in 2014. He
+									intended to further obtain more degrees in different fields of
+									study, with keen interest in business administration. Thabelo
+									has been working for the department of Heath for the past 6
+									years and currently works in Louis Trichardt memorial hospital
+									as a Health professional, He is the finance officer of <span>Liremi
+									</span>Career Foundation.
+								</p>
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/5.jpg" alt="">
+							<h4>Ramasela Carol Ledwaba</h4>
+							<p class="title">Marketing Manager</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								<p class="text-justify">Ramasela Carol Ledwaba was born in
+									1990 at Mosesetjane Village, Limpopo. Carol has dreams and
+									ambitions of adding significant value to the HR industry, she
+									sees herself being integral parts in people’s lives by helping
+									them further their education and also assist them getting and
+									making a career out of their dreams. After matriculating, carol
+									enrolled with the University of Johannesburg in order to feed
+									the love she has for human resource management by studying
+									towards a Diploma in human resource management. She believes in
+									education being the ultimate key success, with that she is
+									determined to further her studies by studying towards a BTech
+									degree and then later a Bcom honours in human resource
+									management. During her varsity years, she was elected to be
+									resident academic advisor for the resident called Hector
+									Peterson in the year 2012 at the University of Johannesburg.
+									Her duties involved assisting first year’s students with
+									adapting to the university diversity and with academics. Carol
+									is currently participating on an 18months internship at EOH
+									recruitment solutions where she will potentially grow to become
+									a recruitment consultant.</p>
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row member-content">
+						<div class="col-sm-3 col-sm-offset-1 member-thumb  fade-right in">
+							<img class="img-responsive img-center img-thumbnail img-circle"
+								src="img/works/6.jpg" alt="">
+							<h4>Tshifhiwa Delicia Mudau</h4>
+							<p class="title">Deputy Director</p>
+						</div>
+						<div class="col-sm-7">
+							<div class="details">
+								<p>Tshifhiwa Delicia Mudau was born in 1991 at Ha-Mashau
+									village in the Limpopo province.Delicia strives to work to her
+									greatest abilities in order to achieve her success and pursue
+									her dreams.Delicia is an aspiring young lady whose dreams are
+									to become an industrial psychologist, her dreams have led her
+									to enrol with the University of Johannesburg to study towards a
+									Bcom in Human Resource Management. She further studied towards
+									Honours in Strategic Management and is determined to further
+									her studies by studying towards Honours in Industrial
+									Psychology, this clearly shows that she values education and
+									sees it as the ultimate key to success. Her passion for people
+									and HR has lead Delicia into a path where she found herself
+									working for the department of Social Development for a period
+									of twelve months.Delicia has also used the knowledge she has
+									gained from her HR studies to secure an Internship with one of
+									the largest recruitment agencies in South Africa, EOH
+									Recruitment solutions where she is currently serving as an
+									Intern Recruitment agent. She is assistant managing director of
+									the Liremi Career Foundation.</p>
+								<ul class="social-content">
+									<li><a href="mailto:mail@example.com"><i
+											class="fa fa-envelope fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+									<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- The content of your page would go here. -->
+		<footer class="footer-distributed">
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home</a> · <a href="team.html">Team</a> · <a
+						href="about.html">About</a> · <a href="contact.html">Contact</a>
+				</p>
+				<p class="footer-company-name">Liremi Career Foundation &copy;
+					2015</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p>
+						<span>21 Louis Street</span> Limpopo, South Africa
+					</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>(015) 9623577</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p>
+						<a href="mailto:support@company.com">LiremiCareerFoundation@web.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span> <strong>Liremi Career
+						Foundation</strong><br> is a Non-profit organization and believes in
+					connecting young people with opportunities through career guidance
+					and career exhibitions.
+				</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+						class="fa fa-twitter"></i></a> <a href="#"><i
+						class="fa fa-linkedin"></i></a> <a href="#"><i
+						class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
+		<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+		<!-- javascript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/freelancer.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/google-code-prettify/prettify.js"></script>
-  <script src="js/portfolio/jquery.quicksand.js"></script>
-  <script src="js/portfolio/setting.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
-  <script src="js/animate.js"></script>
-  <script src="js/custom.js"></script>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.js"></script>
+		<script src="js/freelancer.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/jquery.fancybox-media.js"></script>
+		<script src="js/google-code-prettify/prettify.js"></script>
+		<script src="js/portfolio/jquery.quicksand.js"></script>
+		<script src="js/portfolio/setting.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/animate.js"></script>
+		<script src="js/custom.js"></script>
 </body>
 </html>
