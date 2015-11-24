@@ -1,0 +1,54 @@
+head	1.3;
+access;
+symbols;
+locks
+	hrjrkfoh:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2015.11.20.11.43.18;	author hrjrkfoh;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.11.20.11.42.52;	author hrjrkfoh;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.11.20.11.39.03;	author hrjrkfoh;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@rcledwaba:262144000
+tdmudau:262144000
+@
+
+
+1.2
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d2 1
+@
+
+
+1.1
+log
+@"Modified by /usr/local/cpanel/cpanel "
+@
+text
+@d1 1
+@
